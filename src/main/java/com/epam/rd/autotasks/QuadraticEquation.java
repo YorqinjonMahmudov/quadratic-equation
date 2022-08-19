@@ -17,8 +17,8 @@ public class QuadraticEquation {
         else if (discriminant == 0)
             System.out.println((-b / 2 * a));
         else if (discriminant > 0) {
-            double x1 = (-b - (sqrt(discriminant))) / 2 * a;
-            double x2 = (-b + (sqrt(discriminant))) / 2 * a;
+            double x1 = (-b + (sqrt(discriminant))) / (2 * a);
+            double x2 = (-b - (sqrt(discriminant))) / (2 * a);
             System.out.println(x1 + " "+x2);
 
         }
