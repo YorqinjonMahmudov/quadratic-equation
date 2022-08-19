@@ -11,6 +11,17 @@ public class QuadraticEquation {
         double b = scanner.nextDouble();
         double c = scanner.nextDouble();
 
+        double discriminant = Math.pow(b, 2) - (4 * a * c);
+        if (discriminant < 0)
+            System.out.println("no roots");
+        else if (discriminant == 0)
+            System.out.println((-b / 2 * a));
+        else if (discriminant > 0) {
+            double x1 = (-b - (sqrt(discriminant))) / 2 * a;
+            double x2 = (-b + (sqrt(discriminant))) / 2 * a;
+            System.out.println(x1 + " "+x2);
+
+        }
 
 
     }
